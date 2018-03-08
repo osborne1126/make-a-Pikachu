@@ -42,11 +42,43 @@
           /*transform: translateX(-50%)*/
       }
 
+      .eye{
+          width: 49px;
+          height: 49px;
+          background: #2E2E2E;
+          position: absolute;
+          /*left: 50%;*/
+          border-radius: 50%;
+          border: 2px solid #000000;   /*有border-box加border不影响宽高*/
+      }
+      .eye::before{
+          content: '';
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: white;
+          position: absolute;
+          border-radius: 50%;
+          left: 6px;
+          top:-1px;
+          border: 2px solid #000;
+      }
+      .eye.left{
+          right: 50%;
+          margin-right: 90px;
+      }
+      .eye.right{
+          left: 50%;
+          margin-left: 90px;
+      }
+
   </style>
 </head>
 <body>
         <div class="wrapper">
             <div class="nose"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
         </div>
 
 </body>
