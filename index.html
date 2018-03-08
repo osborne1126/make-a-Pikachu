@@ -41,7 +41,7 @@
           margin-left: -12px;
           /*transform: translateX(-50%)*/
       }
-
+/*  */
       .eye{
           width: 49px;
           height: 49px;
@@ -72,6 +72,26 @@
           margin-left: 90px;
       }
 
+      .face{
+          width: 68px;
+          height: 68px;
+          background: #FC0D1C;
+          border: 2px solid black;
+          border-radius: 50%;
+          position: absolute;
+          top: 85px;
+      } 
+      .face.left{
+          right: 50%;
+          /*top: 85px;*/
+          margin-right: 116px;
+      }
+      .face.right{
+          left: 50%;
+          /*top: 85px;*/
+          margin-left: 116px;
+      }
+
   </style>
 </head>
 <body>
@@ -79,6 +99,8 @@
             <div class="nose"></div>
             <div class="eye left"></div>
             <div class="eye right"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
         </div>
 
 </body>
