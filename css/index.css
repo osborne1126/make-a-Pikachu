@@ -45,3 +45,15 @@ body{
     outline: none;   /*去掉黄色边框线*/
 }
 
+@keyframes hei{
+    0% {
+      transform: rotateX(0)
+    }
+    5%{
+      transform: rotateX(-90deg)
+    }
+    10%{
+      transform: rotateX(0)
+    }
+  }
+

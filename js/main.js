@@ -1,21 +1,21 @@
 !function(){
-  var duration = 50
+  var duration = 5
   /*快慢按钮的切换 */
   $('.actions').on('click', 'button', function(e){
     let $button = $(e.currentTarget)   // button
     let speed = $button.attr('data-speed')
-    //console.log(speed)
+    console.log(speed)
     $button.addClass('active')
       .siblings('.active').removeClass('active')
     switch(speed){
       case 'slow':
-        duration = 100
+        duration = 10
         break
       case 'normal':
-        duration = 50
+        duration = 5
         break
       case 'fast':
-        duration = 10
+        duration = 3
         break
     }
   })
@@ -215,6 +215,12 @@
   left: 50%;
   margin-left: -50px;
   border-radius: 50px;
+}
+/*
+ * 最后的最后当然要让皮卡丘的大眼睛眨动起来了
+ */
+.eye{
+  animation: hei 4s 2s infinite linear;
 }
 /*
  * 好啦，这只皮卡丘送给你~
